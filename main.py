@@ -39,7 +39,7 @@ def main ():
             for shot in shots:
                 if asteroid.collision(shot):
                     shot.kill()
-                    asteroid.kill()
+                    asteroid.split()
         dt = Clock.tick(60)/1000
     
 if __name__ == "__main__":
